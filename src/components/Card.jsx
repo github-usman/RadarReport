@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Card.css';
 
 export default class Card extends Component {
   
@@ -10,8 +11,10 @@ export default class Card extends Component {
     let { title, description,imageUrl,readMore} = this.props;
     return (
       <div>
-        <div className="card my-3" style={{ width: "20rem" }}>
+        <div className="card my-3 " style={{ width: "20rem" }}>
+          <div id="box_image">
           <img  src={(imageUrl===null)?(defaultImage):(imageUrl)} className="card-img-top" alt="Head_line_iamge" />
+          </div>
           <div className="card-body">
             <h5 className="card-title">{((title === null)?(defaultTitle.substring(0,40)):((title => 40)?(title.substring(0,40)):(title)))}...</h5>
             <p className="card-text">{((description === null)?(defaultDescription.substring(0,90)):((description => 40)?(description.substring(0,90)):(description)))}</p>

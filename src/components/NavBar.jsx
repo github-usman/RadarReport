@@ -4,10 +4,10 @@ export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-              Top Core News
+              Radar Report
             </a>
             <button
               className="navbar-toggler"

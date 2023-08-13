@@ -1,0 +1,12 @@
+
+#box_image{
+    overflow: hidden;
+    
+}
+
+#box_image img{
+    transition: all ease 0.5s;
+}
+#box_image:hover img{
+  scale: 1.2;
+}

@@ -3,16 +3,19 @@
   .news_card{
     display: grid;
   grid-template-columns: repeat(4,1fr);
-  column-gap: 10px;
+  column-gap: 15px;
   row-gap: 15px;
   text-align: center;
   }
+  img{
+    height: 200px;
+  }
 
-@media only screen and (max-width : 1400px) {
+@media only screen and ((min-width : 1078px)and (max-width : 1400px)) {
   .news_card{
     display: grid;
   grid-template-columns: repeat(3,1fr);
-  column-gap: 10px;
+  column-gap: 15px;
   row-gap: 15px;
   text-align: center;
   }
@@ -21,7 +24,7 @@
   .news_card{
     display: grid;
   grid-template-columns: repeat(2,1fr);
-  column-gap: 10px;
+  column-gap: 15px;
   row-gap: 15px;
   text-align: center;
   }
@@ -30,10 +33,13 @@
   .news_card{
     display: grid;
   grid-template-columns: repeat(1,1fr);
-  padding-left: 7rem;
-  column-gap: 10px;
+  /* column-gap: 10px; */
+  width: 80%;
   row-gap: 15px;
   text-align: center;
+  }
+  img{
+    height: 270px;
   }
 }
 @media only screen and (max-width :530px)  {
@@ -44,7 +50,16 @@
     row-gap: 15px;
     text-align: center;
   }
+  img{
+    height: 230px;
+  }
 }
-img{
-  height: 200px;
+
+.bg_desing{
+  background-color: #152020;
+ 
 }
+/* .navbar-expand-lg{
+  background-color: #151515;
+} */
+

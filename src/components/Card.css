@@ -1,12 +1,47 @@
 
 #box_image{
     overflow: hidden;
-    
+    border-bottom:solid 2px #736868;
 }
+
 
 #box_image img{
     transition: all ease 0.5s;
+    
 }
+
 #box_image:hover img{
-  scale: 1.2;
+  scale: 1.5;
 }
+
+.bg-dar{
+  background-color: #182a2a;
+  border: solid 2px #736868;
+}
+
+
+.bg-dar:hover{
+  background-color: #151515;
+  border: solid 2px #736868;
+  -webkit-box-shadow: 0 0 5px 4px #060606;
+  -moz-box-shadow: 0 0 5px 4px #000000;
+  box-shadow: 0 0 5px 4px #030303;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-outline-light{
+  border-color: #736868;
+  background-color: black;
+}
+

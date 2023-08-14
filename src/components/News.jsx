@@ -5,7 +5,7 @@ export default class News extends Component {
   render() {
     return (
         <>
-                <div className="container">
+                <div className="container text-center text-white my-3">
                 <h1>Today's Top head line</h1>
                 </div>
                 <NewsItem />

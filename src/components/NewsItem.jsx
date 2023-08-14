@@ -14,15 +14,15 @@ export default class NewsItem extends Component {
       
     };
   }
-
-  async componentDidMount(){
-    console.log("cdm");
-    let url = "https://api.currentsapi.services/v1/latest-news?apiKey=YMAzR4Vompb1qsrKi-2QuAjjvxw7ggV1nDyKedAMcbMqGqbb&country=IN&language=hi";
-    let url_data = await fetch(url);
-    let parsedData = await url_data.json();
-    console.log(parsedData);
-    this.setState({items:parsedData.news})
-}
+   
+//   async componentDidMount(){
+//     console.log("cdm");
+//     let url = "https://api.currentsapi.services/v1/latest-news?apiKey=YMAzR4Vompb1qsrKi-2QuAjjvxw7ggV1nDyKedAMcbMqGqbb&=&language=en&country=jp";
+//     let url_data = await fetch(url);
+//     let parsedData = await url_data.json();
+//     console.log(parsedData);
+//     this.setState({items:parsedData.news})
+// }
 
   render() {
     return (

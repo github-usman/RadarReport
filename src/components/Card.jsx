@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './Card.css';
 
+
 export default class Card extends Component {
   
   render() {
@@ -11,14 +12,14 @@ export default class Card extends Component {
     let { title, description,imageUrl,readMore} = this.props;
     return (
       <div>
-        <div className="card my-3 " style={{ width: "20rem" }}>
+        <div className="card my-3 bg-dar text-white ">
           <div id="box_image">
-          <img  src={(imageUrl===null)?(defaultImage):(imageUrl)} className="card-img-top" alt="Head_line_iamge" />
+          <img  src={(imageUrl===(null || "None" ))?(defaultImage):(imageUrl)} className="card-img-top" alt="Head_line_iamge" />
           </div>
           <div className="card-body">
-            <h5 className="card-title">{((title === null)?(defaultTitle.substring(0,40)):((title => 40)?(title.substring(0,40)):(title)))}...</h5>
-            <p className="card-text">{((description === null)?(defaultDescription.substring(0,90)):((description => 40)?(description.substring(0,90)):(description)))}</p>
-            <a  href={(readMore === null)?(defaultUrl):(readMore)} target="_blank" rel="noreferrer" className="btn btn-outline-primary btn-sm">
+            <h5 className="card-title">{((title === null)?(defaultTitle.substring(0,50)):((title => 50)?(title.substring(0,50)):(title)))}...</h5>
+            <p className="card-text ">{((description === null)?(defaultDescription.substring(0,100)):((description => 100)?(description.substring(0,100)):(description)))}</p>
+            <a  href={(readMore === null)?(defaultUrl):(readMore)} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-sm">
               Read More...
             </a>
             

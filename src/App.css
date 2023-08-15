@@ -33,7 +33,7 @@
   .news_card{
     display: grid;
   grid-template-columns: repeat(1,1fr);
-  /* column-gap: 10px; */
+
   width: 100%;
   row-gap: 15px;
   text-align: center;
@@ -59,7 +59,5 @@
   background-color: #152020;
  
 }
-/* .navbar-expand-lg{
-  background-color: #151515;
-} */
+
 

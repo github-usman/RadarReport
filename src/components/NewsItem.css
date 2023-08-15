@@ -1,31 +1,16 @@
-/* 
-
-.preNext:hover{
-    border: solid 1px white;
-    background-color: #807d7d;
-
+.preNext {
+  background-color: #e7e3e3;
+  border: solid 1px #030202;
 }
 
-button:disabled,
-button[disabled]{
-  border: 1px solid #77e97f;
-  background-color: #b3ec87;
-  color: #77ef5f;
-} */
-
-.preNext{
-    background-color: #e7e3e3;
-    border: solid 1px #030202;
+.preNext:hover {
+  border: solid 1px white;
+  background-color: #807d7d;
 }
-  
-  .preNext:hover {
-    border: solid 1px white;
-    background-color: #807d7d;
-  }
-  
-  .preNext:disabled,
-  .preNext[disabled]{
-    border: 1px solid #ebe5e5;
-    background-color: #4a4848;
-    color: #000000;
-  }
+
+.preNext:disabled,
+.preNext[disabled] {
+  border: 1px solid #ebe5e5;
+  background-color: #4a4848;
+  color: #000000;
+}

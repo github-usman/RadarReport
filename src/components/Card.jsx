@@ -10,6 +10,8 @@ export default class Card extends Component {
     let defaultDescription = "The description is not found currently I'm searching for you a best description please revisit to our website after some time or wait it will auto render after some time";
     let defaultUrl = "https://timesofindia.indiatimes.com/home/headlines";
     let { title, description,imageUrl,readMore} = this.props;
+
+    
     return (
       <div>
         <div className="card my-3 bg-dar text-white ">

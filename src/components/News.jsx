@@ -6,7 +6,7 @@ export default class News extends Component {
     return (
         <>
                 <div className="container text-center text-white my-3">
-                <h1>Today's Top head line</h1>
+                <h1>Today's Top Headline</h1>
                 </div>
                 <NewsItem />
         </>

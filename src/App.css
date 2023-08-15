@@ -30,19 +30,19 @@ img {
 @media only screen and ((min-width: 531px) and (max-width:700px)) {
   .news_card {
     display: grid;
-<<<<<<< HEAD
+
   grid-template-columns: repeat(1,1fr);
 
   width: 100%;
   row-gap: 15px;
   text-align: center;
-=======
+
     grid-template-columns: repeat(1, 1fr);
     /* column-gap: 10px; */
     width: 100%;
     row-gap: 15px;
     text-align: center;
->>>>>>> finalization
+
   }
   img {
     height: 270px;
@@ -64,11 +64,3 @@ img {
 .bg_desing {
   background-color: #152020;
 }
-<<<<<<< HEAD
-
-
-=======
-/* .navbar-expand-lg{
-  background-color: #151515;
-} */
->>>>>>> finalization

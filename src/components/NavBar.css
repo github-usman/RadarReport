@@ -15,7 +15,7 @@
   border-radius: 5px;
   border: solid 3px white;
 }
-<<<<<<< HEAD
+
 span {
   font-weight: 900;
   color: #f2aa2f;
@@ -33,7 +33,7 @@ span {
 
 .bg_dropDowan > li > a {
   color: white;
-=======
+}
 
 .nav-item:hover{
     background-color: rgb(100, 88, 88) !important;
@@ -45,7 +45,7 @@ span {
 
 .bg_dropDowan>li>a{
     color: white;
->>>>>>> finalization
+
 }
 /* mobile humberger */
 .hum_outer {

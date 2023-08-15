@@ -19,3 +19,8 @@ Headlines often include important details such as the subject, main event, locat
 - Multiple Category Support
 - Responsive for Mobile Viewer also
 - Various Features are comming soon...
+# Some Screenshorts
+- Desktop/laptop view
+![Alt text](./src/ReadarReport_Home.png "Desktop version")
+- Mobile/tab view
+![Alt text](./src/Radar_Report_mobile_view.png "Mobile view version")

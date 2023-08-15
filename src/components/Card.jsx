@@ -9,16 +9,23 @@ export default class Card extends Component {
     let defaultTitle = "The headline is not found currently I'm searching for you a best headline";
     let defaultDescription = "The description is not found currently I'm searching for you a best description please revisit to our website after some time or wait it will auto render after some time";
     let defaultUrl = "https://timesofindia.indiatimes.com/home/headlines";
-    let { title, description,imageUrl,readMore} = this.props;
+    let { title, description,imageUrl,readMore,author,publishedDate} = this.props;
+
+    
     return (
       <div>
         <div className="card my-3 bg-dar text-white ">
           <div id="box_image">
+          
           <img  src={(imageUrl===(null || "None" ))?(defaultImage):(imageUrl)} className="card-img-top" alt="Head_line_iamge" />
           </div>
+          
           <div className="card-body">
+         
             <h5 className="card-title">{((title === null)?(defaultTitle.substring(0,50)):((title => 50)?(title.substring(0,50)):(title)))}...</h5>
+            <h6 className="text-end"><span className="badge bg-success ">{author}</span></h6>
             <p className="card-text ">{((description === null)?(defaultDescription.substring(0,100)):((description => 100)?(description.substring(0,100)):(description)))}</p>
+            <p className="card-text"><small className=" text-success">Published on : {new Date(publishedDate).toDateString()} at {new Date(publishedDate).toLocaleTimeString()}</small></p>
             <a  href={(readMore === null)?(defaultUrl):(readMore)} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-sm">
               Read More...
             </a>

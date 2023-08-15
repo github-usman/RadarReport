@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+    color: aqua;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(13, 84, 165);
+}
+.text-white>span{
+    letter-spacing: 1px;
+    color: aliceblue;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+}
+span:hover{
+    color: blue;
+}

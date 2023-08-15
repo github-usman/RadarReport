@@ -1,19 +1,35 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 export default class Navbar extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      humburOpen: true,
+    };
+  }
+  handleClick = async () => {
+    this.setState({ humburOpen: true });
+  };
+  handleBigClick = async () => {
+    this.setState({ humburOpen: false });
+  };
+
   render() {
     return (
       <>
-        <nav className="navbar navbar-expand-lg sticky-top bg_color_nav">
+        <nav className="navbar navbar-expand-lg sticky-top bg_color_nav ">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
               <div className="box_logo">
                 <span>R</span>ADAR <span>R</span>EPORT
               </div>
-            </a>
+            </Link>
             <button
               className="navbar-toggler hum_outer"
+              onClick={this.handleBigClick}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -21,157 +37,95 @@ export default class Navbar extends Component {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon humb_inner"></span>
+              <span className="navbar-toggler-icon humb_inner "></span>
             </button>
             <div
-              className="collapse navbar-collapse"
+              className={`${
+                this.state.humburOpen === true ? "collapse" : ""
+              } navbar-collapse`}
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link active home_link"
                     aria-current="page"
-                    href="/"
+                    to="/"
+                    onClick={this.handleClick}
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
-                
-                {/* for langauges */}
-                <li className="nav-item dropdown ">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                <li className="nav-item">
+                  <Link
+                    to="/top"
+                    onClick={this.handleClick}
+                    className="nav-link active home_link"
                   >
-                    Languages
-                  </a>
-                  <ul className="dropdown-menu bg_dropDowan">
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Hindi(हिन्दी)
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        English
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Chinese
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="dropdown-item">
-                        Japanese
-                      </a>
-                    </li>
-                  </ul>
+                    Top
+                  </Link>
                 </li>
 
-                {/* for category purpose */}
-
-                <li className="nav-item dropdown ">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active home_link"
+                    onClick={this.handleClick}
+                    to="/sports"
                   >
-                    Category
-                  </a>
-                  <ul className="dropdown-menu bg_dropDowan">
-                    <li>
-                      <a href="/" className="dropdown-item">
-                        Top
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Sports
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Entertainment
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Business
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="dropdown-item">
-                        Health
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="dropdown-item">
-                        Politics
-                      </a>
-                    </li>
-                  </ul>
+                    Sports
+                  </Link>
                 </li>
-                <li className="nav-item dropdown ">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active home_link"
+                    onClick={this.handleClick}
+                    to="/entertainment"
                   >
-                    Country
-                  </a>
-                  <ul className="dropdown-menu bg_dropDowan">
-                    <li>
-                      <a href="/" className="dropdown-item">
-                        India
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        America
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Japan
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        China
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="dropdown-item">
-                        England
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="dropdown-item">
-                      Saudi Arabia 
-                      </a>
-                    </li>
-                  </ul>
+                    Entertainment
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    to="/health"
+                    onClick={this.handleClick}
+                    className="nav-link active home_link"
+                  >
+                    Health
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    to="/politics"
+                    onClick={this.handleClick}
+                    className="nav-link active home_link"
+                  >
+                    Politics
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active home_link"
+                    onClick={this.handleClick}
+                    to="/business"
+                  >
+                    Business
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    onClick={this.handleClick}
+                    to="/science"
+                    className="nav-link active home_link b-nav-item"
+                  >
+                    Science
+                  </Link>
                 </li>
               </ul>
+
               <form className="d-flex" role="search">
-                
-               
-                  <a className="nav-link text-light mx-3" href="/">
-                    About Me
-                   </a>
-               
+                <Link className="nav-link text-light mx-3" to="/about">
+                  About Me
+                </Link>
               </form>
             </div>
           </div>

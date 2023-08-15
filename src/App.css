@@ -1,63 +1,74 @@
-
-
-  .news_card{
-    display: grid;
-  grid-template-columns: repeat(4,1fr);
+.news_card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 15px;
   row-gap: 15px;
   text-align: center;
-  }
-  img{
-    height: 200px;
-  }
+}
+img {
+  height: 200px;
+}
 
-@media only screen and ((min-width : 1078px)and (max-width : 1400px)) {
-  .news_card{
+@media only screen and ((min-width: 1078px)and (max-width : 1400px)) {
+  .news_card {
     display: grid;
-  grid-template-columns: repeat(3,1fr);
-  column-gap: 15px;
-  row-gap: 15px;
-  text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    text-align: center;
   }
 }
-@media only screen and ((min-width : 701px) and (max-width:1077px)) {
-  .news_card{
+@media only screen and ((min-width: 701px) and (max-width:1077px)) {
+  .news_card {
     display: grid;
-  grid-template-columns: repeat(2,1fr);
-  column-gap: 15px;
-  row-gap: 15px;
-  text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    text-align: center;
   }
 }
-@media only screen and ((min-width : 531px) and (max-width:700px) ) {
-  .news_card{
+@media only screen and ((min-width: 531px) and (max-width:700px)) {
+  .news_card {
     display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(1,1fr);
 
   width: 100%;
   row-gap: 15px;
   text-align: center;
+=======
+    grid-template-columns: repeat(1, 1fr);
+    /* column-gap: 10px; */
+    width: 100%;
+    row-gap: 15px;
+    text-align: center;
+>>>>>>> finalization
   }
-  img{
+  img {
     height: 270px;
   }
 }
-@media only screen and (max-width :530px)  {
-  .news_card{
+@media only screen and (max-width: 530px) {
+  .news_card {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 10px;
     row-gap: 15px;
     text-align: center;
   }
-  img{
+  img {
     height: 230px;
   }
 }
 
-.bg_desing{
+.bg_desing {
   background-color: #152020;
- 
 }
+<<<<<<< HEAD
 
 
+=======
+/* .navbar-expand-lg{
+  background-color: #151515;
+} */
+>>>>>>> finalization

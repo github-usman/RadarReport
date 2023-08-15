@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .preNext {
   background-color: #e7e3e3;
   border: solid 1px #030202;
@@ -14,3 +15,39 @@
   background-color: #4a4848;
   color: #000000;
 }
+=======
+
+.preNext{
+    background-color: #e7e3e3;
+    border: solid 1px #030202;
+}
+  
+  .preNext:hover {
+    border: solid 1px white;
+    background-color: #807d7d;
+  }
+  
+  .preNext:disabled,
+  .preNext[disabled]{
+    border: 1px solid #ebe5e5;
+    background-color: #4a4848;
+    color: #000000;
+  }
+  .spinner{
+    height: 26.2rem;
+  }
+
+@media only screen and ((min-width : 531) and (max-width:700px) ) {
+  .spinner{
+    height: 24.2rem;
+  }
+}
+
+@media only screen and (max-width :530px)  {
+  .spinner{
+    height: 13.1rem;
+  }
+}
+
+ 
+>>>>>>> finalization

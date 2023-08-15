@@ -12,11 +12,11 @@ export default class Footer extends Component {
             <div className="container p-3">
            
               <div className="d-flex justify-content-center">
-                    <a href="https://github.com/github-usman/"><i class="bi bi-github"></i> GitHub</a>&nbsp;&nbsp;
-                    <a href="https://www.linkedin.com/in/u-s-m-a-n/"><i class="bi bi-linkedin"></i> LinkedIn</a>&nbsp;&nbsp;
-                    <a href="/"><i class="bi bi-file-earmark-code-fill"></i> LeetCode</a>&nbsp;&nbsp;
-                    <a href="/"><i class="bi bi-person-check"></i> Prtfolio</a>&nbsp;&nbsp;
-                    <a href="mailto:usman.placement@gmail.com"><i class="bi bi-envelope"></i> Contact</a>
+                    <a href="https://github.com/github-usman/"><i className="bi bi-github"></i> GitHub</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/u-s-m-a-n/"><i className="bi bi-linkedin"></i> LinkedIn</a>&nbsp;&nbsp;
+                    <a href="/"><i className="bi bi-file-earmark-code-fill"></i> LeetCode</a>&nbsp;&nbsp;
+                    <a href="/"><i className="bi bi-person-check"></i> Prtfolio</a>&nbsp;&nbsp;
+                    <a href="mailto:usman.placement@gmail.com"><i className="bi bi-envelope"></i> Contact</a>
                  
                     
               </div>

@@ -23,12 +23,14 @@ span{
 .nav-item>.nav-link{
     color: white !important;
 }
-.bg_dropDowan{
-    background-color: #190e0e;
-    -webkit-box-shadow: 0 0 5px 2px #867979;
-    -moz-box-shadow: 0 0 5px 2px #514444;
-    box-shadow: 0 0 5px 2px #585151;
+
+.nav-item:hover{
+    background-color: rgb(100, 88, 88) !important;
+    color: #000 !important;
+    border-radius: 8px;
+    padding: 1px;
 }
+
 
 .bg_dropDowan>li>a{
     color: white;

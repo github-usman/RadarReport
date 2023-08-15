@@ -1,28 +1,39 @@
-.bg_color_nav{
-    background-color: #190e0e; 
+.bg_color_nav {
+  background-color: #190e0e;
 }
-.navbar-brand{
-    color: white;
-    letter-spacing: 2px;
-} 
-
-.box_logo{
-    height: auto;
-    width: auto;
-    color: white;
-    padding: 0px 3px;
-    text-align: center;
-    border-radius: 5px;
-    border: solid 3px white;
-}
-span{
-    font-weight: 900;
-    color: #F2AA2F;
+.navbar-brand {
+  color: white;
+  letter-spacing: 2px;
 }
 
-.nav-item>.nav-link{
-    color: white !important;
+.box_logo {
+  height: auto;
+  width: auto;
+  color: white;
+  padding: 0px 3px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 3px white;
 }
+<<<<<<< HEAD
+span {
+  font-weight: 900;
+  color: #f2aa2f;
+}
+
+.nav-item > .nav-link {
+  color: white !important;
+}
+.bg_dropDowan {
+  background-color: #190e0e;
+  -webkit-box-shadow: 0 0 5px 2px #867979;
+  -moz-box-shadow: 0 0 5px 2px #514444;
+  box-shadow: 0 0 5px 2px #585151;
+}
+
+.bg_dropDowan > li > a {
+  color: white;
+=======
 
 .nav-item:hover{
     background-color: rgb(100, 88, 88) !important;
@@ -34,23 +45,22 @@ span{
 
 .bg_dropDowan>li>a{
     color: white;
+>>>>>>> finalization
 }
 /* mobile humberger */
-.hum_outer{
-    background-color: #9b9b96;
+.hum_outer {
+  background-color: #9b9b96;
 }
-.humb_inner{
-    /* border: solid 0.5px #615e59; */
-    background-color: #737371;
-    -webkit-box-shadow: 0 0 5px 2px #867979;
-    -moz-box-shadow: 0 0 5px 2px #514444;
-    box-shadow: 0 0 15px 3px #565653;
-}
-
-.hum_outer:hover{
-    background-color: white;
+.humb_inner {
+  /* border: solid 0.5px #615e59; */
+  background-color: #737371;
+  -webkit-box-shadow: 0 0 5px 2px #867979;
+  -moz-box-shadow: 0 0 5px 2px #514444;
+  box-shadow: 0 0 15px 3px #565653;
 }
 
-
+.hum_outer:hover {
+  background-color: white;
+}
 
 /* end mobile hum */

@@ -1,8 +1,17 @@
+/* 36.54rem */
+
+.about_body{
+    height: 35.54rem;
+    color:aliceblue;
+}
+ @media only screen and ((min-width: 20px) and (max-width:1378px)) {
 .about_body{
     height: auto;
-    color: aliceblue;
+    color: #fff;
+    
 
 }
+    }
 .sign{
     text-align: end;
 }

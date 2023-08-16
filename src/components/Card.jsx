@@ -21,14 +21,15 @@ export default class Card extends Component {
           </div>
           
           <div className="card-body">
-         
+          <p className="card-text "><small className=" text-success">Published on : {new Date(publishedDate).toDateString()} at {new Date(publishedDate).toLocaleTimeString()}</small></p>
             <h5 className="card-title">{((title === null)?(defaultTitle.substring(0,50)):((title => 50)?(title.substring(0,50)):(title)))}...</h5>
             <h6 className="text-end"><span className="badge bg-success ">{author}</span></h6>
-            <p className="card-text ">{((description === null)?(defaultDescription.substring(0,100)):((description => 100)?(description.substring(0,100)):(description)))}</p>
-            <p className="card-text"><small className=" text-success">Published on : {new Date(publishedDate).toDateString()} at {new Date(publishedDate).toLocaleTimeString()}</small></p>
+            <p className="card-text ">{((description === null)?(defaultDescription.substring(0,95)):((description => 95)?(description.substring(0,95)):(description)))}                   
+            </p>
             <a  href={(readMore === null)?(defaultUrl):(readMore)} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-sm">
               Read More...
             </a>
+           
             
           </div>
         </div>

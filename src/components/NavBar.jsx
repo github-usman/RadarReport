@@ -122,8 +122,8 @@ export default class Navbar extends Component {
                 </li>
               </ul>
 
-              <form className="d-flex" role="search">
-                <Link className="nav-link text-light mx-3" to="/about">
+              <form className="d-flex nav-item" role="search">
+                <Link  onClick={this.handleClick} className="nav-link text-light mx-3" to="/about">
                   About Me
                 </Link>
               </form>

@@ -18,9 +18,8 @@ export default class App extends Component {
           <NavBar />
        
             <Routes>
-            
-              <Route exact path='/' index element={<News API_Key={this.API_Key} key='home' country={''}  categeory={''} Language={'&language=hi'} />} />
-              <Route exact path='/top' index element={<News API_Key={this.API_Key} key='top' country={''}  categeory={''} Language={''} />} />
+              <Route exact path='/' index element={<News API_Key={this.API_Key} key='home' country={''}  categeory={''} Language={''} />} /> 
+              <Route exact path='/top' index element={<News API_Key={this.API_Key} key='top' country={''}  categeory={''} Language={'&language=hi'} />} />
               <Route exact path='/sports' index element={<News API_Key={this.API_Key} key='sports' country={'&country=in'}  categeory={'&category=sports'} Language={'&language=en'} />} />
               <Route exact path='/entertainment' index element={<News API_Key={this.API_Key} key='entertainment' country={'&country=in'}  categeory={'&category=entertainment'} Language={'&language=en'} />} />
               <Route exact path='/business' index element={<News API_Key={this.API_Key} key='business' country={'&country=in'}  categeory={'&category=business'} Language={'&language=en'} />} />

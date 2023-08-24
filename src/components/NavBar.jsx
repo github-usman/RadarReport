@@ -48,7 +48,7 @@ export default class Navbar extends Component {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
                 <li className="nav-item">
                   <Link
-                    className="nav-link active home_link"
+                    className="nav-link   home_link"
                     aria-current="page"
                     to="/"
                     onClick={this.handleClick}
@@ -60,15 +60,15 @@ export default class Navbar extends Component {
                   <Link
                     to="/top"
                     onClick={this.handleClick}
-                    className="nav-link active home_link"
+                    className="nav-link  home_link"
                   >
-                    Top
+                    Indian
                   </Link>
                 </li>
 
                 <li className="nav-item">
                   <Link
-                    className="nav-link active home_link"
+                    className="nav-link  home_link"
                     onClick={this.handleClick}
                     to="/sports"
                   >
@@ -77,7 +77,7 @@ export default class Navbar extends Component {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link active home_link"
+                    className="nav-link  home_link"
                     onClick={this.handleClick}
                     to="/entertainment"
                   >
@@ -88,7 +88,7 @@ export default class Navbar extends Component {
                   <Link
                     to="/health"
                     onClick={this.handleClick}
-                    className="nav-link active home_link"
+                    className="nav-link  home_link"
                   >
                     Health
                   </Link>
@@ -97,14 +97,14 @@ export default class Navbar extends Component {
                   <Link
                     to="/politics"
                     onClick={this.handleClick}
-                    className="nav-link active home_link"
+                    className="nav-link  home_link"
                   >
                     Politics
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link active home_link"
+                    className="nav-link  home_link"
                     onClick={this.handleClick}
                     to="/business"
                   >
@@ -115,7 +115,7 @@ export default class Navbar extends Component {
                   <Link
                     onClick={this.handleClick}
                     to="/science"
-                    className="nav-link active home_link b-nav-item"
+                    className="nav-link  home_link b-nav-item "
                   >
                     Science
                   </Link>
@@ -123,7 +123,11 @@ export default class Navbar extends Component {
               </ul>
 
               <form className="d-flex nav-item" role="search">
-                <Link  onClick={this.handleClick} className="nav-link text-light mx-3" to="/about">
+                <Link
+                  onClick={this.handleClick}
+                  className="nav-link text-light mx-3"
+                  to="/about"
+                >
                   About Me
                 </Link>
               </form>

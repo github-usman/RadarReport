@@ -25,7 +25,7 @@ export default class Footer extends Component {
           
             <div
               className="text-center p-3"
-              style={{backgroundcolor: "rgba(0, 0, 0, 0.2)"}}
+              style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}
             >
               © {new Date().getFullYear()} Copyright&nbsp;
               <a className="text-white" href="https://github.com/github-usman/" >
